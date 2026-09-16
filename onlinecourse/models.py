@@ -113,6 +113,7 @@ class Question(models.Model):
         else:
             return False
 
+
 # Choice model
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)    
